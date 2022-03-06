@@ -6,7 +6,7 @@ import java.io.FileWriter;
 public class WriteToFile {
     public static void main(String[] args) {
         try {
-            FileWriter writeToThisFile = new FileWriter("TestFile.txt");
+            FileWriter writeToThisFile = new FileWriter("/home/moutasim/Documents/GitHub/100DaysOfCode/src/Day_1/TestFile.txt");
             writeToThisFile.write("This is a sample text, expected to be written"
             + " to in the test file");
             writeToThisFile.close();
