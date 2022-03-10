@@ -7,4 +7,4 @@
 - change nicknames
 - leave the server
 
-For quick easy documentation, refer to (doc.md)
+For quick easy documentation, refer to (Doc.md)

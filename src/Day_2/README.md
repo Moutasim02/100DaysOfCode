@@ -6,7 +6,8 @@
 
 ## To-Do for tomorrow
 
-- Start making a chatbot with java
+- Add two matrices...
+- Binary search possibly
 
 From now on, everyday I will post what shall I do for tomorrow to keep in track, but it's most likely to be with side projects
  
