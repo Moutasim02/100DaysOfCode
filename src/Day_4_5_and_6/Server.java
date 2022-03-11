@@ -1,4 +1,4 @@
-package Day_4_and_5;
+package Day_4_5_and_6;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,6 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -20,6 +19,11 @@ public class Server implements Runnable {
     public Server() {
         connections = new ArrayList<>();
         done = false;
+    }
+
+    public static void main(String[] args) {
+        Server server = new Server();
+        server.run();
     }
 
     //override the run method in Runnable interface
@@ -56,6 +60,7 @@ public class Server implements Runnable {
     public void shutdown() {
         try {
             done = true;
+            pool.shutdown();
             if (!server.isClosed()) {
                 server.close();
             }
@@ -86,7 +91,7 @@ public class Server implements Runnable {
                 out.println("please enter a nickname: ");
                 nickname = in.readLine();
                 System.out.println(nickname + "connected"); //shows who have connected recently
-                broadcast(nickname + "joined the chat!");
+                broadcast(nickname + " joined the chat!");
                 String message;
                 while ((message = in.readLine()) != null) {
                     if (message.startsWith("/moutasim")) {
@@ -99,7 +104,7 @@ public class Server implements Runnable {
                             out.println("no nickname provided");
                         }
                     } else if (message.startsWith("/quit")) {
-                        broadcast(nickname + "left the chat");
+                        broadcast(nickname + " left the chat");
                         shutdown();
                     } else {
                         broadcast(nickname + ": " + message);
@@ -127,10 +132,5 @@ public class Server implements Runnable {
         public void sendMessage(String message) {
             out.println(message);
         }
-    }
-
-    public static void main(String[] args) {
-        Server server = new Server();
-        server.run();
     }
 }
