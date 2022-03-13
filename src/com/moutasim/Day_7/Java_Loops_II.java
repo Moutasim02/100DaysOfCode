@@ -1,4 +1,4 @@
-package Day_7;
+package com.moutasim.Day_7;
 
 import java.util.Scanner;
 

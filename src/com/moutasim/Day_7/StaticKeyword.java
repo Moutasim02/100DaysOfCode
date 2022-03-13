@@ -1,10 +1,6 @@
-package Day_7;
+package com.moutasim.Day_7;
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class StaticKeyword {
     static int B;

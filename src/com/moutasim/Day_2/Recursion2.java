@@ -1,4 +1,4 @@
-package Day_2;
+package com.moutasim.Day_2;
 
 public class Recursion2 {
     private static final String RED = "\033[0;31m";

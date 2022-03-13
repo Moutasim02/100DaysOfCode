@@ -1,5 +1,5 @@
 
-package Day_2;
+package com.moutasim.Day_2;
 
 // Use recursion to add all the numbers up to 10.
 public class Recursion {

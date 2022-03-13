@@ -1,4 +1,4 @@
-package Day_4_5_and_6;
+package com.moutasim.Day_4_5_and_6;
 
 import java.io.BufferedReader;
 import java.io.IOException;
