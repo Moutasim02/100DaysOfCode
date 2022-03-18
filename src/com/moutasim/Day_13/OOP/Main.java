@@ -25,7 +25,7 @@ public class Main {
 
         System.out.println("\n----------------\n" + "     Update   \n" + "----------------");
 
-        moutasim.withdraw(3421);
+        moutasim.withdraw(2000000);
         mark.deposit(30020);
         System.out.println(moutasim.toString() + "\n");
         System.out.println(mark.toString());
