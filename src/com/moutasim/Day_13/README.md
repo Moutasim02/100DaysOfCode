@@ -5,4 +5,4 @@ OOP concepts exercising + hackerrank problem-solving day
   - Withdrawal & Deposit functionality available.
   - Data statically typed for practice purposes.
 ## To-Do for tomorrow
-- Lean Java EE servlets. 
+- Learn Java EE servlets.
