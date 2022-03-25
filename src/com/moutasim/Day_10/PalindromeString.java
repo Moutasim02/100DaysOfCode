@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class PalindromeString {
     public static void main(String[] args) {
 
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("String to check: ");
         String A=sc.next();
         String reversedString = "";
